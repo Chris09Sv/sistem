@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Compras";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container2">
+    <div class="row">
+        <h5>Compras de productos</h5>
+        <div id="test1" class="col s12">
+            <form asp-area="Compras" asp-controller="Compras" asp-action="Index" method="get">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Buscar producto" />
+
+                    </div>
+                    <div class="input-field col s6">
+                        <button type="submit" class="waves-effect waves-light btn-small">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a asp-page="/Compras/Compras" class="waves-effect waves-light btn-small">Comprar</a>
+    </div>
+
+</div>
